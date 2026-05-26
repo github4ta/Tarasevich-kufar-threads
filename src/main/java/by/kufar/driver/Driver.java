@@ -23,10 +23,7 @@ public class Driver {
         if (driver != null) {
             driver.quit();
         }
-        // Ставим ТОЧКУ С ЗАПЯТОЙ в конце строки
         driverThreadLocal.remove();
-
-        // Теперь эта строка вызовется без ошибок
         WaitManager.unload();
     }
 }
